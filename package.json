@@ -1,0 +1,5 @@
+{
+  "name": "survey-app",
+  "private": true,
+  "workspaces": ["frontend", "server"]
+}
