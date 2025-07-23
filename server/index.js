@@ -7,7 +7,7 @@ require('./models/User');
 require('./services/passport');
 
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI).then((res)=>console.log("success")).catch((err)=>console.log('connection error'));
 const app = express();
 app.use(
     cookiesSession({
